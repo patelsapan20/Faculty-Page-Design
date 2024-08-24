@@ -1,0 +1,77 @@
+---
+title: Radu Teodorescu
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= current_page.data.title %></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1><%= current_page.data.title %></h1>
+        <h4>The Ohio State University</h4>
+    </div>
+
+    <div class="container">
+
+
+        <div class="navbar">
+            <ul>
+                <li>
+                    <%= link_to "About Me", "../index.html" %>
+                </li>
+                <li>
+                    <%= link_to "Publications", "Publications.html" %>
+                </li>
+                <li>
+                    <%= link_to "Presentations", "Presentation.html" %>
+                </li>
+                <li>
+                    <%= link_to "Research", "https://web.cse.ohio-state.edu/~teodorescu.1/arch/index.html", target: "_blank"  %>
+                </li>
+                <li>
+                    <%= link_to "Tools", "https://web.cse.ohio-state.edu/~teodorescu.1/arch/tools/tools.html", target: "_blank" %>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Venue</th>
+                    <th>Date</th>
+                    <th>Slides</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Architectures for Energy Efficient Computing at Ultra-low Voltages</td>
+                    <td>CALCM Seminar at Carnegie Mellon University</td>
+                    <td>April 2010</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>My job talk, Helping Moore’s Law: Architectural Techniques to Address Parameter Variation</td>
+                    <td>Given in 2008 at George Washington University ECE, Drexel University ECE, Texas A&M ECE, University of Arizona CS, Ohio State CSE and Microsoft Research</td>
+                    <td>2008</td>
+                    <td><a href="http://web.cse.ohio-state.edu/~teodorescu.1/download/slides/job-talk-teodorescu.pdf", target= "_blank">slides</a></td>
+                </tr>
+                <tr>
+                    <td>Variation-Aware Application Scheduling and Power Management for Chip Multiprocessors</td>
+                    <td>35th International Symposium on Computer Architecture (ISCA)</td>
+                    <td>June 2008</td>
+                    <td><a href="http://web.cse.ohio-state.edu/~teodorescu.1/download/slides/radu-isca08-slides.pdf", target= "_blank">slides</a></td>
+                </tr>
+                <!--add more presentation rows here-->
+            </tbody>
+        </table>
+        </div>
+
+    </div>

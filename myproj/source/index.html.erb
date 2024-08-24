@@ -1,0 +1,114 @@
+---
+title: Radu Teodorescu
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= current_page.data.title %></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 
+    site broken into multiple divs:
+    1. header - title + OSU
+    2. container - contains content, navbar and footer/contanct info div
+    3. content - contains all the information found on the page
+    4. navbar - navigation with links to multiple pages
+    5. footer - contact information for only the home page
+    -->
+
+    <!--header-->
+    <div class="header">
+        <h1><a href = "index.html" class = "no-underline">><%= current_page.data.title %></a></h1>
+        <h4>The Ohio State University</h4>
+    </div>
+
+    <!--container consisting navbar, content and footer-->
+    <div class="container">
+
+        <!--
+        navbar with links to:
+        1. homepage
+        2. publications - different page
+        3. presentations- different page
+        4. research - link redirect
+        5. tools - link redirect
+        -->
+        <div class="navbar">
+            <ul>
+                <li>
+                    
+                    <%= link_to "About Me", "index.html" %>
+                </li>
+                <li>
+                    <%= link_to "Publications", "code/Publications.html" %>
+                </li>
+                <li>
+                    <%= link_to "Presentations", "code/Presentation.html" %>
+                </li>
+                <li>
+                    <%= link_to "Research", "https://web.cse.ohio-state.edu/~teodorescu.1/arch/index.html", target: "_blank"  %>
+                </li>
+                <li>
+                    <%= link_to "Tools", "https://web.cse.ohio-state.edu/~teodorescu.1/arch/tools/tools.html", target: "_blank" %>
+                </li>
+            </ul>
+        </div>
+
+        <!--content consists of all the main stuff available on original site-->
+        <div class="content">
+        <img class="img" src="images/radu.jpeg" alt="">
+        <p>
+            I am a Professor in the <a href="https://cse.osu.edu/" target=_blank>Department of Computer Science and Engineering</a> at <a href="https://www.osu.edu/" target=_blank>Ohio State University.</a>
+            I lead the <a href="https://web.cse.ohio-state.edu/~teodorescu.1/arch/index.html" target=_blank>Architecture Research Lab.</a> Our research interests include computer architecture, 
+            energy efficient computing, security, and reliability.</p>
+        <p>
+            I received my Ph.D. from the <a href="https://cs.illinois.edu/" target=_blank>Department of Computer Science, University of Illinois at Urbana-Champaign</a> 
+            where I was a member of the <a href="https://iacoma.cs.uiuc.edu/" target=_blank>IACOMA </a>group working with <a href="https://iacoma.cs.uiuc.edu/~torrella/" target=_blank>Prof. Josep Torrellas.</a>
+            I was the recipient of the Ohio State CSE Department Teaching Award in 2021, the <a href="https://engineering.osu.edu/awards/content/lumley-research-award" target=_blank>Lumley Award </a>
+            in 2014, an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1253933&HistoricalAwards=false" target=_blank>NSF CAREER award</a> 
+            in 2012, <a href="https://www.intel.com/content/www/us/en/education/highered/higher-ed-overview.html" target=_blank>Intel Foundation Fellowship</a>for 2007-2008, and the
+            <a href="https://cs.illinois.edu/csillinois/awards#2007-2008" target=_blank>W. J. Poppelbaum Award</a> for 2008.
+        </p>
+
+        <p>
+            I was happy to help organize <a href="https://microarch.org/micro52/" target=_blank>MICRO-52 in Columbus, Ohio</a> in October 2019.
+        </p>
+
+        <p>
+            Thrilled to be a part of the <a href="https://acecenter.grainger.illinois.edu/" target=_blank>ACE Center for Evolvable Computing</a>, a <a href="https://engineering.osu.edu/news/2023/01/research-consortium-focused-strengthening-semiconductor-industry" target=_blank>RC/DARPA JUMP 2.0</a>S center.
+            I am leading the <a href="https://acecenter.grainger.illinois.edu/about/research-theme-4" target=_blank>Security, Privacy, and Correctness Theme</a>, devising novel technologies for evolvable and scalable distributed computing.
+        </p>
+
+        <p>
+            I am looking for motivated students to join my research group. For more details and research updates, please visit my group’s website.
+            If you are interested in working with us, send me an email or drop by my office.
+        </p>
+
+        <h3>Teaching</h3>
+        <a href="https://syllabi.engineering.osu.edu/syllabi/cse_6421" target=_blank>CSE6421</a> and <a href="https://syllabi.engineering.osu.edu/syllabi/cse_3421" target=_blank>CSE3421</a>
+
+        <h3>Some History</h3>
+        <p>
+            I was born in <a href="https://en.wikipedia.org/wiki/Cluj-Napoca" target=_blank>Cluj-Napoca</a>, in the beautiful province of <a href="https://www.visittransilvania.ro/" target=_blank>Transilvania</a> in 
+            <a href="https://www.cia.gov/redirects/" target=_blank>Romania</a>.
+            I received an Engineer Diploma from the <a href="https://www.utcluj.ro/" target=_blank>Technical University of Cluj-Napoca</a> in 2002.
+        </p>
+
+        <!--contact info with redirect mail and office address-->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><b>Email: </b><a href="mailto : teodorescu1@osu.edu" class = "email">teodorescu1@osu.edu</a>
+            <p><b>Office:</b> <span class="email">797 Dreese Labs, 2015 Neil Ave., Columbus, OH, 43210</span></p>
+        </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
